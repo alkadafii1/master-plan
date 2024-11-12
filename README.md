@@ -35,5 +35,28 @@ ScrollController diinisialisasi pada initState dan ditambahkan listener untuk me
 Langkah 13 (dispose - Melepaskan Scroll Controller)
 dispose() berfungsi untuk melepaskan scrollController dari memori ketika halaman tidak lagi digunakan. Hal ini mencegah kebocoran memori yang bisa memperlambat aplikasi. Dengan melepaskan resource yang sudah tidak diperlukan, aplikasi bisa berjalan lebih efisien dan responsif.
 
-6. Kumpulkan laporan praktikum Anda berupa link commit atau repository GitHub ke spreadsheet yang telah disediakan!
-- 
+# Praktikum 2
+
+Hasil
+
+![SS](assets/prak2.png)
+
+# Jelaskan mana yang dimaksud InheritedWidget pada langkah 1 tersebut! Mengapa yang digunakan InheritedNotifier?
+- InheritedWidget yang dimaksud pada langkah 1 adalah PlanProvider. Dengan turunan InheritedWidget ini, PlanProvider memungkinkan data Plan tersedia di seluruh widget subtree secara otomatis, tanpa harus mengirimkan data Plan ke setiap widget secara manual.
+- Mengapa menggunakan InheritedNotifier?
+InheritedNotifier adalah turunan InheritedWidget yang memungkinkan data Plan dalam ValueNotifier otomatis diperbarui di seluruh widget subtree saat ada perubahan, tanpa perlu panggilan setState.
+
+# Jelaskan maksud dari method di langkah 3 pada praktikum tersebut! Mengapa dilakukan demikian?
+- Pada langkah 3, kita menambahkan dua method (completedCount dan completenessMessage) ke dalam model Plan.
+completedCount : Method ini menghitung berapa banyak Task di dalam daftar tasks yang sudah selesai (task.complete == true). Method ini menggunakan .where() untuk memfilter hanya tugas-tugas yang complete, lalu .length untuk menghitung jumlahnya
+- completenessMessage : Method ini mengembalikan pesan yang menyatakan kemajuan (progress) dalam bentuk string, misalnya "2 out of 5 tasks." String ini menunjukkan jumlah tugas yang sudah selesai (completedCount) dari total jumlah tugas (tasks.length).
+
+# Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+- Penambahan SafeArea, SafeArea menampilkan completenessMessage dari Plan di bagian bawah layar, menghindari area yang terhalang UI (seperti notch atau navigation bar)
+
+
+
+
+
+
+
