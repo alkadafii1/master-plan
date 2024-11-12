@@ -8,10 +8,15 @@
 1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil 
 akhir praktikum beserta penjelasannya di file README.md! Jika Anda menemukan ada 
 yang error atau tidak berjalan dengan baik, silakan diperbaiki. 
+
 ![Screenshoot](assets/master.png)
+
 ![Screenshoot](assets/master1.png)
+
 ![Screenshoot](assets/master2.png)
+
 ![Screenshoot](assets/master3.png)
+
 ![Screenshoot](assets/master4.png)
 
 2. Jelaskan maksud dari langkah 4 pada praktikum tersebut! Mengapa dilakukan demikian? 
@@ -21,7 +26,9 @@ yang error atau tidak berjalan dengan baik, silakan diperbaiki.
 - variabel plan dalam class _PlanScreenState bertujuan untuk menyimpan state dari rencana yang akan ditampilkan dalam aplikasi. Variabel ini berfungsi untuk menyimpan objek Plan yang berisi nama dan daftar tugas (tasks).
 
 4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah anda buat! 
+
 - ![gif](assets/merged.gif)
+
 Langkah 9 membuat widget _buildTaskTile yang bertujuan untuk menampilkan setiap tugas di dalam plan.tasks sebagai ListTile. ListTile ini mencakup Checkbox dan TextFormField.
 
 Checkbox: Checkbox memungkinkan pengguna untuk menandai status tugas sebagai "selesai" atau "belum selesai." Ketika checkbox ditekan, nilai complete pada task tersebut diperbarui melalui setState, sehingga tampilan akan merefleksikan perubahan status tugas tersebut. Dengan kata lain, ketika pengguna memilih checkbox, aplikasi akan menyimpan status terbaru dari tugas.
